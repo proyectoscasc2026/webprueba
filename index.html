@@ -293,7 +293,7 @@ Q8NGw6pPMkZzEA+550tDRwBoRq7p2TmDKy05wURpaoSQdBY1dWDR2XmNW05ibbdYeVsVywFBT4zpD3Gy
 
     <script>
         // REEMPLAZA ESTA URL CON LA URL DE TU WEB APP DE GOOGLE APPS SCRIPT LUEGO DE IMPLEMENTARLA
-        const WEB_APP_URL = "URL_DE_TU_GOOGLE_APPS_SCRIPT_AQUI";
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwPDoclyyHyfMYPsY7NP2nb83ce2YbZZq9xkQtgVJiKk3XNA_91p9n40hlNOpHYMNKq/exec";
 
         function handleSubmit(event) {
             event.preventDefault();
@@ -313,7 +313,7 @@ Q8NGw6pPMkZzEA+550tDRwBoRq7p2TmDKy05wURpaoSQdBY1dWDR2XmNW05ibbdYeVsVywFBT4zpD3Gy
             spinner.style.display = "block";
 
             // Validar que la URL haya sido configurada
-            if (WEB_APP_URL === "https://script.google.com/macros/s/AKfycbwPDoclyyHyfMYPsY7NP2nb83ce2YbZZq9xkQtgVJiKk3XNA_91p9n40hlNOpHYMNKq/exec") {
+            if (WEB_APP_URL === "URL_DE_TU_GOOGLE_APPS_SCRIPT_AQUI" || WEB_APP_URL === "") {
                 setTimeout(() => {
                     spinner.style.display = "none";
                     submitBtn.style.display = "block";
